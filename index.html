@@ -14,30 +14,36 @@
         <img src="assets/odin-logo.png" alt="">
         <span>ODIN</span>
       </div>
+      <p>Photo by 
+        <a href="https://unsplash.com/@michael_g_krahn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Michael Krahn</a> 
+          on 
+        <a href="https://unsplash.com/photos/_ReQ6GSqSaM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      </p>
     </div>
   </aside>
   <form action="">
     <div class="form-header">
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nemo distinctio quisquam commodi neque eligendi soluta pos</p>
-      <p>You know you want to</p>
+      <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
+      <p>You <em>know</em> you want to</p>
+      
     </div>
     <div class="form-fields">
       <p>Let's do this!</p>
-      <label for="">First name</label>
-      <input type="text">
-      <label for="">Last name</label>
-      <input type="text">
-      <label for="">Email</label>
-      <input type="text">
-      <label for="">Phone number</label>
-      <input type="text">
-      <label for="">Password</label>
-      <input type="text">
-      <label for="">Confirm password</label>
-      <input type="text">
+      <label for="first_name">First name</label>
+      <input type="text" id="first_name" required maxlength="20" placeholder="Ivan">
+      <label for="last_name">Last name</label>
+      <input type="text" id="last_name" required maxlength="20" placeholder="Ivanov">
+      <label for="email">Email</label>
+      <input type="email" id="email" required placeholder="Email@mail.ru">
+      <label for="phone_number">Phone number</label>
+      <input type="tel" id="phone_number" required placeholder="8 (123) 456-78-90">
+      <label for="password">Password</label>
+      <input type="password" id="password" required placeholder=" ">
+      <label for="confirm_password">Confirm password</label>
+      <input type="password" id="confirm_password" required placeholder=" ">
     </div>
     <div class="form-actions">
-      <button type="submit">Create an account</button>
+      <button type="submit">Create Account</button>
       <p>
         Already have an account? 
         <a href="">Log in</a>
