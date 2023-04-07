@@ -133,8 +133,8 @@ form > div{
     border: 2px solid lightsteelblue;
 }
 
-.form-fields input:invalid:not(:placeholder-shown) {
-    border: 2px solid crimson
+.form-fields input.invalid {
+    border: 2px solid crimson;
 }
 
 .form-actions{
@@ -148,9 +148,15 @@ form > div{
     margin: 1rem 0;
     font-size: 1.3rem;
     font-weight: 700;
-    border: none;
+    border: 2px solid rgb(59, 105, 59);
     border-radius: 15px;
     box-shadow: 2px 2px 10px -4px black;
+    transition: background-color 400ms ease-out;
+    cursor: pointer;
+}
+
+.form-actions button:hover{
+    background-color: rgb(92, 163, 92);
 }
 
 .form-actions p{
@@ -161,4 +167,21 @@ form > div{
     text-decoration: none;
     font-weight: 700;
     color: rgb(59, 105, 59);
+}
+
+label::after{
+    display: inline-block;
+    content: "";
+    color: white;
+    background-color: crimson;
+    opacity: 0;
+    transform: translate(20px, 16px);
+    transition: opacity 500ms ease-out, transform 500ms ease-out;
+
+}
+
+label:has(+input.invalid)::after{
+    content: "error";
+    transform: translate(20px, 0);
+    opacity: 1;
 }
