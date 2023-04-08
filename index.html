@@ -31,17 +31,35 @@
     <div class="form-fields">
       <p>Let's do this!</p>
       <label for="first_name">First name</label>
-      <input type="text" id="first_name" required maxlength="20" placeholder="Ivan">
+      <div class="input">
+        <input type="text" id="first_name" required maxlength="20" placeholder="Ivan">
+        <span class="error"></span>
+      </div>
       <label for="last_name">Last name</label>
-      <input type="text" id="last_name" required maxlength="20" placeholder="Ivanov">
+      <div class="input">
+        <input type="text" id="last_name" required maxlength="20" placeholder="Ivanov">
+        <span class="error"></span>
+      </div>
       <label for="email">Email</label>
-      <input type="email" id="email" required placeholder="Email@mail.ru">
+      <div class="input">
+        <input type="email" id="email" required placeholder="Email@mail.ru">
+        <span class="error"></span>
+      </div>
       <label for="phone_number">Phone number</label>
-      <input type="tel" id="phone_number" required placeholder="8 (123) 456-78-90">
+      <div class="input">
+        <input type="tel" id="phone_number" required placeholder="8 (123) 456-78-90">
+        <span class="error"></span>
+      </div>
       <label for="password">Password</label>
-      <input type="password" id="password" required placeholder=" ">
+      <div class="input">
+        <input type="password" id="password" required maxlength="20">
+        <span class="error"></span>
+      </div>
       <label for="confirm_password">Confirm password</label>
-      <input type="password" id="confirm_password" required placeholder=" ">
+      <div class="input">
+        <input type="password" id="confirm_password" required maxlength="20">
+        <span class="error"></span>
+      </div>
     </div>
     <div class="form-actions">
       <button type="submit">Create Account</button>
